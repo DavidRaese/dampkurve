@@ -1,0 +1,79 @@
+\section{Aufgabe f)}
+\subsection{Berechnung des Parameters C:}
+
+Zur Berechnung des Parameters C aus der NBS-Formel muss zuerst die Ionenstärke und der Koeffizient A berechnet werden
+\begin{enumerate}
+	\item NBS-Formel:
+	      \begin{align*}
+		      ln(\gamma) = \frac{-A \abs{z_+ \cdot z_-} \sqrt{I}} {1 + B \sqrt{I}} + CI
+	      \end{align*}
+	      \begin{table}[H]
+		      \centering
+
+		      \begin{tabular}{ll}
+			      A... ?               & I... Ionenstärke     \\
+			      $z_+$... pos. Ladung & $z_-$... neg. Ladung \\
+			      B... 1               & C... gesucht         \\
+		      \end{tabular}
+	      \end{table}
+	\item Bestiummng der Ionenstärke:
+	      \begin{itemize}
+		      \item Die Ionenstärke ist gegeben durch:
+		            \begin{align*}
+			            I = \frac{1}{2} \sum\limits_{i} z_i^2m_i
+		            \end{align*}
+		            \begin{table}[H]
+			            \centering
+
+			            \begin{tabular}{ll}
+				            $z$... Ladung & m... Molalität \\
+			            \end{tabular}
+		            \end{table}
+		      \item Ionenstärke von $NaCl$ und $CaCl_2$:
+		            \begin{align*}
+			            I_{NaCl}   & = \frac{1}{2} (1^2 \cdot 4 \frac{mol}{Kg} + 1^2 \cdot 4 \frac{mol}{Kg}) = 4  \\
+			            I_{CaCl_2} & = \frac{1}{2} (2^2 \cdot 4 \frac{mol}{Kg} + 1^2 \cdot 8 \frac{mol}{Kg}) = 12
+		            \end{align*}
+		      \item A berechnen:
+		            \begin{itemize}
+			            \item Die Größe A ist vom Lösungsmittel und der jeweiligen Temperatur Abhängig.
+		            \end{itemize}
+		            \begin{align*}
+			            A = \frac{F^3}{4 \pi \cdot N_a} \cdot \sqrt{ \frac{\rho} {2 \epsilon^3 R^3 T^3}}
+		            \end{align*}
+		            \begin{table}[H]
+			            \centering
+			            \begin{tabular}{ll}
+				            $F$... Faraday-Konstante & $N_a$... Avogadrozahl                  \\
+				            $\rho$... Dichte         & $\epsilon$... Dielektrizitätskonstante
+			            \end{tabular}
+		            \end{table}
+		            \begin{align*}
+			             & A = \frac{96485^3}{4 \pi * 6.022 \cdot 10^{26}} \cdot
+			            \sqrt{ \frac{1000}{2 \cdot (6.95 \cdot 10^{-10})^3 \cdot R^3 T^3}} \\
+			             & A_{NaCl, 1006mbar} = 0.82 \quad A_{CaCl_2, 1006mbar} = 0.80     \\
+			             & A_{NaCl, 350mbar} = 0.92  \quad A_{CaCl_2, 350mbar} = 0.89      \\
+		            \end{align*}
+		      \item NBS-Formel auf C umstellen und C berechnen:
+		            \begin{align*}
+			            ln(\gamma) = \frac{-A \abs{z_+ \cdot z_-} \sqrt{I}} {1 + B \sqrt{I}} + CI \\
+			            C = \frac{ln(\gamma)}{I} \cdot \frac{A \cdot \abs{z_+ \cdot z_-} \sqrt{I}}
+			            {(1+B\sqrt{I})I}
+		            \end{align*}
+
+		            \begin{table}[H]
+			            \centering
+			            \begin{tabular}{lccccc}
+				            \toprule
+				                              & $\gamma$ & Temperatur [K] & I  & A    & C     \\
+				            \midrule
+				            $NaCl$ 1006mbar   & 1.39     & 377.45         & 4  & 0.82 & 0.219 \\
+				            $NaCl$ 350mbar    & 1.63     & 350.53         & 4  & 0.92 & 0.275 \\
+				            $CaCl_2$ 1006mbar & 2.79     & 384.35         & 12 & 0.80 & 0.189 \\
+				            $CaCl_2$ 350mbar  & 2.45     & 357.63         & 12 & 0.89 & 0.190 \\
+				            \bottomrule
+			            \end{tabular}
+			            \caption{Ergebnisse für Aufgabe f}
+		            \end{table}
+	      \end{itemize}
+\end{enumerate}
