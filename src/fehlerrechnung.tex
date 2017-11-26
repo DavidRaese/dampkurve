@@ -1,0 +1,47 @@
+\section{Fehlerrechung}
+Da alle Messungen mit Fehleren behaftet sind, muss dies auch im Ergebnis
+berücksichtigt werden. Die Fehlerbehafteten Vorgänge in diesem Versuch waren
+das Ablesen der Temperatur und des Druckes. Die Temperaturanzeige hat ca.
+um 0.1C und der Druck um ca. 4mbar geschwankt. Bei der Berechnung der 
+Verdampfungsenthalpie in Aufgabe c) muss dies noch berücksichtigt werden.
+
+\begin{enumerate}
+    \item Aufstellen der Funktion:
+    \begin{align*}
+        \Delta_V H_m = k = \frac{\Delta y}{\Delta x} = \frac{\Delta 
+        ln(\frac{p}{p_0})}{\Delta T^{-1}} 
+        = \frac{ln(p) - ln(p_0)}{T_0^{-1} - T^{-1}}
+    \end{align*}
+    \item Gegebene Werte: 
+    \begin{itemize}
+        \item $\Delta T = 0.1K$
+        \item $\Delta p = 0.004bar$
+        \item $T_0 = 373.25K$
+        \item $T_1 = 342.95K$
+        \item $p_0 = 1.007bar$
+        \item $p_1 = 0.308bar$
+    \end{itemize}
+    \item $\Delta k$ berechnen:
+    \begin{align*}
+        \Delta k &= \abs{\frac{\delta k}{\delta p_0}} \cdot \Delta p_0
+        + \abs{\frac{\delta k}{\delta p}} \cdot \Delta p 
+        + \abs{\frac{\delta k}{\delta T_0}} \cdot \Delta T_0
+        + \abs{\frac{\delta k}{\delta T}} \cdot \Delta T \\
+        &= \abs{\frac{-\frac{1}{p_0}}{T_0^{-1} - T_1^{-1}}} \cdot \Delta p_0
+        + \abs{\frac{\frac{1}{p_1}}{T_0^{-1} - T_1^{-1}}} \cdot \Delta p
+        + \abs{\frac{-(ln(p_1) - ln(p_0)) \cdot T_1^{-2}}{(T_0^{-1} - T_1^{-1})^2}} \cdot \Delta T
+        + \abs{\frac{(ln(p_1)-ln(p_0)) \cdot T_0^{-2}}{(T_0^{-1} - T_1^{-1})^2}} \cdot \Delta T_0 \\
+        &= 4195 \cdot 0.004 + 13716 \cdot 0.004 + 179 \cdot 0.1 + 151 \cdot 0.1 \\
+        &= 104.8 J/mol
+    \end{align*}
+     \item Der Fehler der Steigung beträgt: 
+     \begin{align*}
+         \Delta k = \pm 104.8 J/mol
+     \end{align*}
+     \item $\Delta_V H_m$ beträgt demnach:
+     \begin{align*}
+        m &= \frac{-\Delta_V H_m}{R} \pm 104.8 J/mol \\
+        \Delta_V H_m &= - R \cdot  (m \pm 104.8 J/mol) \\
+        \Delta_V H_m &= 42.1 KJ/mol \pm 0.9 KJ/mol
+     \end{align*}  
+\end{enumerate}
