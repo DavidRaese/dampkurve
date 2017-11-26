@@ -10,18 +10,46 @@ zwischen idealem und realen Verhalten.
 	\gamma          & = \frac{\Delta T_{real}}{\Delta T_{ideal}}
 \end{align*}
 
+% \begin{table}[H]
+% 	\centering
+% 	\caption{Tabelle}
+% 	\begin{tabular}{lccc}
+% 		\toprule
+% 		                  & $\Delta T_{real}$[K] & $\Delta T_{theo.}$[K] & $\gamma$ \\
+% 		\midrule
+% 		NaCl 350mbar      & 4.8                  & 3.05                  & 1.6      \\
+% 		NaCl 1006mbar     & 4.8                  & 3.54                  & 1.4      \\
+% 		$CaCl_2$ 350mbar  & 11.9                 & 4.3                   & 2.8      \\
+% 		$CaCl_2$ 1006mbar & 11.7                 & 5.00                  & 2.34     \\
+% 		\bottomrule
+% 	\end{tabular}
+% \end{table}
+
+\newline
+
 \begin{table}[H]
 	\centering
-	\caption{Tabelle}
-	\begin{tabular}{lccc}
-		\toprule
-		                  & $\Delta T_{real}$[K] & $\Delta T_{theo.}$[K] & $\gamma$ \\
-		\midrule
-		NaCl 350mbar      & 4.8                  & 3.05                  & 1.6      \\
-		NaCl 1006mbar     & 4.8                  & 3.54                  & 1.4      \\
-		$CaCl_2$ 350mbar  & 11.9                 & 4.3                   & 2.8      \\
-		$CaCl_2$ 1006mbar & 11.7                 & 5.00                  & 2.34     \\
-		\bottomrule
+	\label{tab: Aktivitätskoeffizient_NaCl}
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{\ce{NaCl}}}                                                 \\\hline
+		\textbf{Druck [mbar]} & \textbf{real [K]} & \textbf{theoretisch [K]} & \textbf{$\gamma$} \\\hline
+		1006                  & 4,8               & 3,46                     & 1,39              \\
+		350                   & 4,84              & 2,97                     & 1,63              \\\hline
 	\end{tabular}
+	\caption{Aktivit"atskoeffizienten f"ur \ce{NaCl}}
 \end{table}
- 
+
+\begin{table}[H]
+	\centering
+	\label{tab: Aktivitätskoeffizient_CaCö2}
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{\ce{CaCl2}}}                                                \\\hline
+		\textbf{Druck [mbar]} & \textbf{real [K]} & \textbf{theoretisch [K]} & \textbf{$\gamma$} \\\hline
+		1006                  & 11,7              & 4,20                     & 2,79              \\
+		350                   & 11,94             & 4,88                     & 2,45              \\\hline
+	\end{tabular}
+	\caption{Aktivit"atskoeffizienten f"ur \ce{CaCl2}}
+\end{table}
+
